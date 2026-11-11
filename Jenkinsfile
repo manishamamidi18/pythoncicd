@@ -1,4 +1,3 @@
-
 pipeline {
     agent any
 
@@ -30,7 +29,7 @@ pipeline {
 
         stage('Package') {
             steps {
-                bat 'tar -a -c -f pythoncicd.zip app.py apptest.py requirements.txt'
+                bat 'tar -a -c -f pythoncicd.zip app.py apptest.py'
             }
         }
     }
